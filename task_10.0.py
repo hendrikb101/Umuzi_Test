@@ -1,21 +1,8 @@
-from typing import Counter
+word1 = str(input('Enter a word: '))
+word2 = str(input('Enter a second word: '))
+def compare(word1, word2):
+    for x in word1:
+        return x
+    x = compare(word1, word2)
 
-
-a = str(input('Enter a number: '))
-b = str(input('Enter a number: '))
-def compare(a, b):
-    dict1 = Counter(a)
-    dict2 = Counter(b)
-
-    commonDict = dict1 & dict2
-
-    if len(commonDict) == 0:
-        print (-1)
-        return
-
-commonChars = list(commonDict.elements())
-
-commonChars = sorted(commonChars)
-
-print (''.join(commonChars))
-
+    ## Really struggling working with 2 inputs in a function, need more training
