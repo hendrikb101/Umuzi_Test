@@ -1,5 +1,4 @@
 text = input('Please enter a string? ')
-tot = ""
 def check_vowels(text):
     tot = ""
     for char in text:
