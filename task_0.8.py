@@ -1,20 +1,17 @@
-num = 123
-def time_converter_hour(num):
+def time_converter(num):
     hour = num // 60
-    return hour
-hour = time_converter_hour(num)
-if hour == 1 :
-    hour_string = "Hour"
-else:
-    hour_string = "Hours"
+    if hour == 1 :
+        hour_string = "hour"
+    else:
+        hour_string = "hours"
     
-def time_converter_min(num):
     minutes = num - (hour * 60)
-    return minutes
-minutes = time_converter_min(num)
-if minutes == 1:
-        minute_string = "Minute"
-else:
-        minute_string = "Minutes"
+    if minutes == 1:
+        minute_string = "minute"
+    else:
+        minute_string = "minutes"
         
-print("The number " + str(num),"is equal to " + str(hour) + " " + str(hour_string) + " and " + str(minutes) + " " + str(minute_string))
+    print(str(hour) + " " + str(hour_string) + ", " + str(minutes) + " " + str(minute_string))
+
+
+time_converter(121)
