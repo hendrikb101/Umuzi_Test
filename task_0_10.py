@@ -1,15 +1,8 @@
 def compare(word1, word2):
-    match = []
-    for char1 in word1:
-        for char2 in word2:
-            if char1.casefold() == char2.casefold():
-                match.append(char2)
+    first_word = set(word1.lower())
+    sec_word = set(word2.lower())
     
-    new_match = []
-    for a in match:
-        if a not in new_match:
-            new_match.append(a)
-    new_match = ", ".join(new_match)
-    print(f"Common letters: {new_match}")
-
-compare("Look","fool")
+    common_characters = (first_word & sec_word)
+    for char in common_characters:
+        char = ", ".join(common_characters)
+    print("Common letters: ", char )
