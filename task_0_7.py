@@ -1,11 +1,8 @@
-def temp_converter_fahrenheit(c):
-    fahrenheit = (c * 9/5) + 32
+def convert_celsius_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
     return fahrenheit
 
 
-def temp_converter_celsius(f):
-    celsius = (f - 32) * 5/9
+def convert_fahrenheit_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) * 5/9
     return celsius
-
-print(temp_converter_celsius(10))
-print(temp_converter_fahrenheit(90))
